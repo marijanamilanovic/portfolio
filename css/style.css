@@ -1,0 +1,298 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 20px;
+  color: #1f522a;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#container {
+  width: 100%;
+}
+#container header {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container header #logo {
+  width: 10%;
+  margin-left: 90px;
+}
+#container header #logo img {
+  width: 90px;
+}
+#container header #meni {
+  width: 50%;
+}
+#container header #meni ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container header #meni ul a:hover {
+  color: #b6eed1;
+}
+#container main #background {
+  width: 100%;
+  height: 750px;
+  background-image: url("../img/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container main #background #title {
+  width: 45%;
+  text-align: center;
+  animation-name: naslovAnimation;
+  animation-duration: 2s;
+}
+@keyframes naslovAnimation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+#container main #background #title h1 {
+  font-weight: bold;
+  font-size: 50px;
+  color: #000000;
+  text-align: center;
+  letter-spacing: 4px;
+}
+#container main #background #title h2 {
+  color: #000000;
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 20px;
+}
+#container main #background #title hr {
+  margin: 30px auto;
+  border: 2px solid #1f522a;
+  border-radius: 2px;
+  background-color: #1f522a;
+  width: 200px;
+}
+#container main #background #title a i {
+  width: 30px;
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #1f522a;
+  border-radius: 30px;
+  margin-top: 5px;
+  padding: 5px;
+}
+#title p{
+  color: #1f522a;
+  margin-bottom: 5px;
+}
+#container main #about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+}
+#container main #about h3 {
+  color: #1f522a;
+  margin-bottom: 70px;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+#container main #about #about-me {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  width: 100%;
+}
+#container main #about #about-me #authorPhoto {
+  width: 40%;
+  margin-left: 40px;
+}
+#container main #about #about-me #authorPhoto img {
+  width: 60%;
+  border-radius: 6px;
+  box-shadow: rgb(31, 22, 44) 0px 20px 30px -10px;
+}
+#container main #about #authorText {
+  width: 60%;
+}
+#container main #about #authorText p {
+  text-align: center;
+  font-size: 23px;
+  color: #1f522a;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+#container main #services {
+  width: 100%;
+  background-color: rgba(186, 217, 190, 0.2);
+  margin-top: 50px;
+  padding: 140px;
+}
+#container main #services h3 {
+  color: #1f522a;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  margin-bottom: 50px;
+  margin-top: -25px;
+}
+#container main #services #service-blocks {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+#container main #services #service-blocks .service {
+  width: 25%;
+}
+#container main #services #service-blocks .service i {
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  color: #1f522a;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+#container main #services #service-blocks .service p {
+  color: #1f522a;
+  font-size: 18px;
+  text-align: justify;
+  margin-top: 15px;
+}
+#container main #services #service-blocks .service h4 {
+  font-size: 28px;
+  text-align: center;
+  color: #1f522a;
+  padding-bottom: 15px;
+  margin-top: 20px;
+}
+#container main #projects {
+  width: 100%;
+  margin-top: 50px;
+  padding-bottom: 80px;
+}
+#container main #projects #project-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+#container main #projects #project-blocks .project {
+  width: 27%;
+  transition-duration: 0.3s;
+}
+#container main #projects #project-blocks .project img {
+  width: 100%;
+  box-shadow: rgb(31, 22, 44) 0px 20px 30px -10px;
+  border-radius: 6px;
+}
+#container main #projects #project-blocks .project:hover {
+  transition: ease-out;
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+#container main #projects h3 {
+  color: #1f522a;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+#container main #projects p {
+  text-align: center;
+  font-size: 18px;
+  color: #1f522a;
+  margin-bottom: 40px;
+  margin-top: -25px;
+}
+#container main #skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: 0px auto;
+}
+#container main #skills h3 {
+  color: #1f522a;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+}
+#container main #skills p {
+  text-align: center;
+  font-size: 18px;
+  color: #1f522a;
+  margin-bottom: 50px;
+}
+#container main #skills .blocks {
+  margin: 10px 0px;
+  background: linear-gradient(90deg, rgb(31, 82, 42) 6%, rgb(182, 238, 209) 100%);
+  height: 50px;
+  border: 2px;
+  border-radius: 5px;
+}
+#container main #skills .blocks p {
+  padding: 15px;
+  text-align: left;
+  color: #b6eed1;
+}
+#container main #skills #first {
+  width: 90%;
+}
+#container main #skills #second {
+  width: 75%;
+}
+#container main #skills #third {
+  width: 75%;
+}
+#container main #skills #fourth {
+  width: 60%;
+}
+#container main #skills #fifth {
+  width: 80%;
+}
+#container main footer {
+  width: 100%;
+  padding: 10px;
+  background-color: #1f522a;
+  margin-top: 70px;
+}
+#container main footer p {
+  font-size: 17px;
+  color: #b6eed1;
+  text-align: center;
+  margin-bottom: 0px;
+}/*# sourceMappingURL=style.css.map */
